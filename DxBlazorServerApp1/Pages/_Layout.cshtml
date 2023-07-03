@@ -16,7 +16,7 @@
 <body>
     @{
         var isIEOrEdgeLegacy = Context.Request.Headers["User-Agent"]
-            .Any(userAgent => userAgent.Contains("MSIE") || userAgent.Contains("Trident") || userAgent.Contains("Edge/"));
+            .Any(userAgent => userAgent is not null && (userAgent.Contains("MSIE") || userAgent.Contains("Trident") || userAgent.Contains("Edge/")));
     }
     @if(isIEOrEdgeLegacy)
     {

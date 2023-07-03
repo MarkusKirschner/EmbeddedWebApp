@@ -4,8 +4,6 @@ namespace DxBlazorServerApp1;
 
 public static class AssemblyInitializer
 {
-    private const string ServerUrl = "http://localhost:3045";
-
     public static void Main()
     {
         // Required as an entry point for the application.
@@ -17,7 +15,7 @@ public static class AssemblyInitializer
         {
             var builder = WebApplication.CreateBuilder(new WebApplicationOptions
             {
-                ApplicationName = "DxBlazorServerApp1", // Change Pages/_Host.cshtml:16, too
+                ApplicationName = "DxBlazorServerApp1",
                 ContentRootPath = AppDomain.CurrentDomain.BaseDirectory,
                 EnvironmentName = Environments.Development,
                 WebRootPath = "wwwroot"

@@ -1,3 +1,2 @@
-﻿Console.WriteLine("Hello, World!");
-//DxBlazorServerApp1.AssemblyInitializer.RunServer();
-BlazorApp1.AssemblyInitializer.RunServer();
+﻿Console.WriteLine("Console application started.");
+DxBlazorServerApp1.AssemblyInitializer.RunServer();

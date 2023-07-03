@@ -16,3 +16,6 @@ cd C:\Users\mk\Downloads\testapp
 ![Release](BrokenBlazorRelease.png)
 
 
+# Cannot connect to localhost with Microsoft Edge
+
+open `edge://net-internals/#hsts` and delete localhost in section "Delete domain security policies"

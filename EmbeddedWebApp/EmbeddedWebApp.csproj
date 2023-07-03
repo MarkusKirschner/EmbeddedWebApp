@@ -8,8 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\BlazorApp1\BlazorApp1.csproj" />
-      <!--ProjectReference Include="..\DxBlazorServerApp1\DxBlazorServerApp1.csproj" />-->
+      <ProjectReference Include="..\DxBlazorServerApp1\DxBlazorServerApp1.csproj" />
     </ItemGroup>
 
 </Project>
