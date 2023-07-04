@@ -1,3 +1,4 @@
+using System.Reflection;
 using DxBlazorServerApp1.Data;
 
 namespace DxBlazorServerApp1;
@@ -13,6 +14,7 @@ public static class AssemblyInitializer
     {
         try
         {
+            Console.WriteLine("Current directory: " + AppDomain.CurrentDomain.BaseDirectory);
             var builder = WebApplication.CreateBuilder(new WebApplicationOptions
             {
                 ApplicationName = "DxBlazorServerApp1",
@@ -20,6 +22,9 @@ public static class AssemblyInitializer
                 EnvironmentName = Environments.Development,
                 WebRootPath = "wwwroot"
             });
+       
+            builder.WebHost.UseUrls("http://localhost:5050");
+
             // Add services to the container.
             builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor();
